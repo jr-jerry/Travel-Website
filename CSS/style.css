@@ -1,0 +1,691 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    line-height: 3rem;
+    /* border:1px dotted purple; */
+}
+a{
+    /* color:#f4f4f4; */
+    text-decoration:none;
+
+}
+:root{
+    font-size:62.5%;
+}
+body{
+    font-family:'Montserrat',sans-serif;
+}
+.header{
+    height:95vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../Img/header-image.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    position: relative;
+
+}
+/* .......................Nav-bar>>>>>>>>>>>>>>>>>>>>>> */
+
+.nav-bar{
+    padding:1rem;
+}
+.nav-bar .logo{
+    float:left;
+    font-weight:500;
+    margin-top:1rem;
+}
+
+.nav-bar .nav-item
+{
+    display:inline-block;
+    list-style-type: none;
+    padding:1rem;
+    
+}
+.nav-bar .nav-ul{
+    float:right;
+    margin-top:1rem;
+}
+.nav-bar::after{
+    content:' ';
+    display:block;
+    clear:both;
+}
+h1,h2,h3{
+    margin-bottom:0.5em;
+    letter-spacing:0.15em;
+}
+.nav-bar a{
+    margin-bottom:0.5em;
+    letter-spacing: 0.15em; 
+}
+.nav-bar .nav-ul a:link,.nav-bar .nav-ul a:visited{
+    color:#f4f4f4;
+}
+.nav-bar .nav-ul a:hover{
+    border-bottom: 1px solid white;
+}
+.nav-bar .nav-ul a{
+    text-decoration: none;
+    font-size:2.2rem;
+}
+/* .........................Utility Class>>>>>>>>>>>>>>>>>
+*/
+.uppercase{
+    text-transform:uppercase;
+}
+.bg-dark{
+    background:#263228;
+}
+.container{
+max-width:1200px;
+    width:75vw;
+    margin:0 auto;
+}
+.text-light{
+    color:#f4f4f4;
+ }
+ .text-red{
+    color:rgb(233, 27, 102);
+ }
+ .text-gray{ 
+    color:rgb(71, 60, 60);
+}
+.text-black{
+    color:rgba(12, 11, 11, 0.836);
+}
+.lg-heading{
+    font-size:3.2rem;
+    
+    
+}
+.md-heading{
+    font-size:2.2rem;
+    /* line-height:calc(2.5em+0.5vw); */
+}
+.sm-heading{
+    font-size:1.6em;
+    /* line-height:calc(2rem+0.3vw); */
+}
+.btn{
+    
+
+    display:inline-block;
+    padding:0.5em 1.5em;
+    margin-top:0.5em;
+    text-transform:uppercase;
+    font-weight: 500;
+}
+.btn-pri{
+    background-color: #fff;
+    border-radius: 10em;
+
+}
+.btn-sec{
+    /* background-color:#f4f4f4; */
+    border:2px solid rgb(233, 27, 102);
+    background-color:#fff;
+    border-radius: 10em;;
+}
+/* ..............................center box>>>>>>>>>>>>>>>>>>; */
+
+.header-content{
+    position:absolute;
+    text-align: center;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+}
+.header-content h1{
+    text-transform: uppercase;
+}
+.header-content p{
+    text-transform:uppercase;
+    font-weight: 300;
+}
+.header-content a:hover{
+   background-color:#ebe7e7;
+
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>Showcase.>>>>>>>>>>>>>>>>>>>> */
+.showcase{
+    padding:10rem 0;
+    background-color: #ddd;
+}
+.showcase .row{
+    /* max-height:35rem; */
+    height:35rem;
+    background-color:#fff;
+    /* border:3px solid red; */
+}
+.row1 .img-box,.row2 .text-box{
+    float:left;
+    width:50%;
+
+}
+.row{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+}
+.row1{
+    margin-bottom:10rem;
+}
+.row2 .img-box,.row1 .text-box{
+    float:right;
+    width:50%;
+
+}
+.row::after{
+    content:' ';
+    display:block;
+    clear:both;
+}
+.row .img-box{
+    height:100%;
+}
+.row .img-box img{
+    display:inline-block;
+    
+    width:100%;
+    height:100%;
+    /* border:2px solid red; */
+    object-fit: cover;
+    
+}
+.row .text-box{
+    
+    padding:2rem;
+}
+.row .text-box p{
+    font-weight:300;
+    letter-spacing: 0.15rem;
+    /* width:90%; */
+}
+.row .text-box h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    /* width:90%; */
+}
+.row .text-box a{
+    font-size:1.4rem;
+}
+.row .text-box a:hover{
+    background: #ebe7e7;
+
+}
+/* ,,,,,,,,,,,,,,,,,,,,,,,Featured Section>>>>>>>>> */
+.feature{
+    padding:10rem 0;
+    background:#ddd;
+
+}
+.box-wrapper{
+    /* border:2px solid red; */
+    height:auto;
+    width:90%;
+    margin:0 auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+
+}
+.box{
+    float:left;
+    width:33.333%;
+    padding:1rem;
+    color:#fff;
+    text-align: center;
+    height:100%;
+    /* white-space: nowrap; */
+    /* text-overflow:ellipsis; */
+}
+.box-wrapper::after{
+    content:' ';
+    display:block;
+    clear:both;
+}
+.box1,.box3{
+    background-color:rgb(168, 158, 158);
+}
+.box2{
+    background-color:rgb(230, 29, 103)
+}
+.box{
+    height:100%;
+    /* overflow:hidden; */
+    
+}
+/* .....................Footer.................... */
+.link{
+   background-color:rgb(71, 60, 60);
+   text-align: center;
+   padding:2rem;    
+   color:#ddd; 
+}
+
+.link p{
+    font-size:1.6rem;
+}
+.link a{
+    margin:2em;
+}
+/* .......................AboutPage...................
+ */
+ .About {
+    padding:2rem;
+    
+ }
+ .about-heading{
+    font-weight:500;
+    margin:0;
+    /* padding:0; */
+  
+ }
+ .about-heading:after{
+    content:'';
+    display:block;
+    border:3px solid rgb(233, 27, 102);
+    /* width:100%; */
+    clear:both;
+
+ }
+ .about-para{
+    padding:0rem 2rem;
+ }
+ .About ul{
+    /* display:inline-block; */
+    padding:0rem 5rem 5rem 5rem;
+ }
+ .About ul li{
+    list-style-type:none;
+ }
+ .about-wrapper .arow li::before{
+    content:" \2713" ;
+    padding:1rem;
+    clear:both;
+ }
+ .about-wrapper .arow{
+    text-align:center;
+    float:right;
+    width:50%;
+
+ }
+ .about-wrapper{
+    color:#263228;
+    font-size: 1.6rem;
+    margin-top:1rem;
+ }
+ .count .ab-box{
+    float:left;
+    width:25%;
+    text-align: center;
+    font-weight: 500;
+    color:#263228;
+
+ }
+ .count span{
+    font-weight:600;
+ }
+ .count::after{
+    content:' ';
+    display:block;
+    clear:both;
+ }
+ /* ..................Contact-Bar..................... */
+ .contact-bar{
+    padding:1rem;
+    color:white;
+    margin-top:2rem;
+    box-shadow: 5px 5px 10px  #da0335;
+ 
+background: linear-gradient(to right, #e42e0e, #da0335); 
+
+ }
+ .contact-bar .contact-bar-para{
+    /* display:inline-block; */
+    /* border:1px solid white; */
+    margin: 1rem;
+    width:60%;
+    font-weight: 600;
+    letter-spacing:0.15em;
+    float:left;
+    
+ }
+ .contact-bar .contact-btn{
+    float:right;
+    text-align: right;
+
+    padding:1em  3.5em;
+    /* margin:auto 1rem; */
+    border:3px solid #ddd;
+    
+ }
+ .contact-bar::after{
+    content:' ';
+    display:block;
+    clear:both;
+ }
+/* ...............................Contact-page............ */
+.contact-page .company-add{
+    float:left;
+    width:49%;
+    height:720px;
+    background-color:whitesmoke;
+}
+.contact-page .company-form{
+    float:right;
+    height:720px;
+    width:49%;
+    background-color:whitesmoke;
+    
+}
+.contact-page .company-form h2{
+    padding:2rem;
+    font-weight:500;
+}
+.contact-page{
+    padding:3rem;
+    background-color:#fff;
+}
+.company-add i,.company-add h2{
+    display:inline-block;
+}
+.company-add{
+    padding:1rem;
+}
+.company-add img{
+    max-width:100%;
+    
+    min-height:37rem;
+    object-fit:cover;
+    object-position:right;
+}
+.cnt{
+    margin-bottom:2rem;
+}
+
+/* ,,,,,,,,,,,,,,,,,,,,,,Contactform......................... */
+.company-form h2::after{
+    content:' ';
+    display:block;
+    border:3px solid #da0335;
+
+}
+.contact-page::after{
+    content:' ';
+    display:block;
+    clear:both;
+}
+.company-form{ padding:2rem;}
+.company-form .form label{
+    display:block;
+    /* margin-bottom:em; */
+    font-size:1.6rem;
+    color:#263228;
+    font-weight:500;
+
+}
+.form-group{
+    margin-bottom:1rem;
+}
+.company-form .form label::after{
+    content:" *";
+    color:#da0335;
+}
+.company-form .form input{
+    width:100%;
+}
+.company-form textarea{
+    height:24rem;
+    width:100%;
+    padding:1rem;
+}
+.company-form .form-btn {
+    
+    display:inline-block;
+    width:100%;
+
+    margin:0px auto;
+    text-align: center;
+    
+}
+.company-form .form-btn button{
+    font-size:1.8rem;
+    width:50%;
+    border-radius: 100px;
+    background-color: #263228;
+    color:#fff;
+    text-transform: uppercase;
+}
+/* ......................media-query...................... */
+@media (min-width:370px) and (max-width:500px) {
+    :root{
+        font-size:50%;
+    }
+    .nav-bar .nav-ul,.nav-bar .logo{
+        float:none;
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+    .nav-bar .nav-ul a{
+        font-size:2.1rem;
+    }
+   .showcase .row .img-box,.row .text-box{
+        float:none;
+        display:block;
+        width:100%;
+        text-align: center;
+    }
+    .showcase .row{
+        margin-bottom:2rem;
+        display:block;
+        height:auto;
+        
+    }
+    .box-wrapper{
+        height:auto;
+
+    }
+    .box-wrapper .box{
+        float:none;
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+    .box h2,.box i{
+        
+        font-weight:700;
+    }
+    .box1,.box2{
+        margin-bottom:2rem;
+    }
+    .box-wrapper{
+        box-shadow:none;
+    }
+    .box1,.box2,.box3{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+    
+    }
+    .contact-bar .contact-bar-para,.contact-bar .contact-btn{
+        float:none;
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+    .contact-page .company-add{
+        float:none;
+        display:block;
+        width:100%;
+        margin-bottom:5rem;
+        /* text-align: center; */
+
+    }
+    .contact-page .company-form{
+        float:none;
+        width:100%;
+        display:block;
+
+    }
+
+
+
+      
+    
+}
+@media(max-width:396px)
+{
+    :root{
+        font-size:43.5%;
+    }
+    .nav-bar .nav-ul,.nav-bar .logo{
+        float:none;
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+    .nav-bar .nav-ul a{
+        font-size:1.9rem;
+    }
+   .showcase .row .img-box,.row .text-box{
+        float:none;
+        display:block;
+        width:100%;
+        text-align: center;
+    }
+    .showcase .row{
+        margin-bottom:2rem;
+        display:block;
+        height:auto;
+        
+    }
+    .box-wrapper{
+        height:auto;
+
+    }
+    .box-wrapper .box{
+        float:none;
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+    .box h2,.box i{
+        
+        font-weight:700;
+    }
+    .box1,.box2{
+        margin-bottom:2rem;
+    }
+    .box-wrapper{
+        box-shadow:none;
+    }
+    .box1,.box2,.box3{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+    
+    }
+    .contact-bar .contact-bar-para,.contact-bar .contact-btn{
+        float:none;
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+    .contact-page .company-add{
+        float:none;
+        display:block;
+        width:100%;
+        margin-bottom:5rem;
+        /* text-align: center; */
+
+    }
+    .contact-page .company-form{
+        float:none;
+        width:100%;
+        display:block;
+
+    }
+}
+
+@media (min-width:501px) and (max-width:768px)
+{
+    :root{
+        font-size:56%;
+    }
+    p{
+        font-size:18px;
+    }
+    .nav-bar .nav-ul,.nav-bar .logo{
+        float:none;
+        display:block;
+        width:100%;
+        text-align:center;
+        
+    }
+    
+   .showcase .row .img-box,.row .text-box{
+        float:none;
+        display:block;
+        width:100%;
+        text-align: center;
+    }
+    .showcase .row{
+        margin-bottom:2rem;
+        display:block;
+        height:auto;
+        
+    }
+    .box-wrapper{
+        height:auto;
+
+    }
+    .box-wrapper .box{
+        float:none;
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+    .box h2,.box i{
+        
+        font-weight:700;
+    }
+    .box1,.box2{
+        margin-bottom:2rem;
+    }
+    .box-wrapper{
+        box-shadow:none;
+    }
+    .box1,.box2,.box3{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+    
+    }
+    .contact-bar .contact-bar-para,.contact-bar .contact-btn{
+        float:none;
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+    .contact-page .company-add{
+        float:none;
+        display:block;
+        width:100%;
+        margin-bottom:5rem;
+        /* text-align: center; */
+
+    }
+    .contact-page .company-form{
+        float:none;
+        width:100%;
+        display:block;
+
+    }
+}
+@media (min-width:769px) and (max-width:1200px)
+{
+    :root{
+        font-size:59%;
+    }
+}
+
+
+
+
+
+
